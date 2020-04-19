@@ -1,0 +1,25 @@
+{
+  "connection": "default",
+  "collectionName": "pages",
+  "info": {
+    "name": "page"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "contents": {
+      "collection": "content",
+      "via": "page"
+    },
+    "posts": {
+      "collection": "post",
+      "via": "pages",
+      "dominant": true
+    }
+  }
+}

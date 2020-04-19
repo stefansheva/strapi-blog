@@ -1,0 +1,30 @@
+{
+  "connection": "default",
+  "collectionName": "contents",
+  "info": {
+    "name": "content"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "value": {
+      "type": "richtext"
+    },
+    "isPublished": {
+      "type": "boolean"
+    },
+    "post": {
+      "via": "contents",
+      "model": "post"
+    },
+    "page": {
+      "via": "contents",
+      "model": "page"
+    }
+  }
+}

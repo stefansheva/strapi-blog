@@ -1,0 +1,24 @@
+{
+  "connection": "default",
+  "collectionName": "posts",
+  "info": {
+    "name": "post"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "isDeleted": {
+      "type": "boolean"
+    },
+    "contents": {
+      "collection": "content",
+      "via": "post"
+    },
+    "pages": {
+      "via": "posts",
+      "collection": "page"
+    }
+  }
+}
