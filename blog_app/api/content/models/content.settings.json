@@ -19,12 +19,18 @@
       "type": "boolean"
     },
     "post": {
-      "via": "contents",
-      "model": "post"
+      "model": "post",
+      "via": "contents"
     },
     "page": {
-      "via": "contents",
-      "model": "page"
+      "model": "page",
+      "via": "contents"
+    },
+    "coverImage": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
     }
   }
 }

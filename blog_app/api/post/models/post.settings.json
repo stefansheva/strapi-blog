@@ -13,8 +13,8 @@
       "type": "boolean"
     },
     "contents": {
-      "collection": "content",
-      "via": "post"
+      "via": "post",
+      "collection": "content"
     },
     "pages": {
       "via": "posts",
