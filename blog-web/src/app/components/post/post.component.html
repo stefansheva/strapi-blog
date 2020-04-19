@@ -1,11 +1,11 @@
 <div class="row">
     <div *ngFor="let post of posts" class="col-lg-4 col-md-4 col-sm-6">
-        <div class="portfolio-item">
-            <a class="portfolio-link">
+        <div class="post-item">
+            <a class="post-link">
                 <img class="img-fluid" src="http://localhost:1337{{post.contents[0].coverImage.url}}" alt="" /></a>
-            <div class="portfolio-caption">
-                <div class="portfolio-caption-heading">{{post.contents[0].title}}</div>
-                <div class="portfolio-caption-subheading text-muted">{{post.contents[0].value}}</div>
+            <div class="post-caption">
+                <div class="post-caption-heading">{{post.contents[0].title}}</div>
+                <div class="post-caption-subheading text-muted">{{post.contents[0].value}}</div>
             </div>
         </div>
     </div>

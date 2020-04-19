@@ -1,5 +1,4 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { ContentService } from 'src/services/content.service';
 import { PageService } from 'src/services/page.service';
 
 @Component({
